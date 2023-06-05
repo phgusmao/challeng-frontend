@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { SearchLoupe } from "./search-icon";
+import { SearchIcon } from "./search-icon";
 import { InputHTMLAttributes } from "react";
 
 export const PrimaryInput = styled.input`
-    width: 352px;
+    width: 100%;
     border-radius: 8px;
     padding: 10px 16px;
     border: none;
@@ -35,7 +35,7 @@ export function PrimaryInputWithSearchIcon(props: InputProps) {
     return (
         <InputContainer>
             <PrimaryInput {...props}/>
-            <SearchLoupe/>
+            <SearchIcon/>
         </InputContainer>
     )
 }
